@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Billboard Advertising</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="head">
+        <ul>
+          <br />
+          <li>
+            <a href="index.html" class="btn2"><span>Home</span></a>
+          </li>
+          <li>
+            <a href="aboutUs.html" class="btn2"><span>About Us</span></a>
+          </li>
+          <li>
+            <a href="getquote.html" class="btn2"><span>Get Quote</span></a>
+          </li>
+          <li>
+            <a href="gallery.html" class="btn2"><span>Gallery</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="privacy">
+      <h1>Contact Support</h1>
+      <p>
+        Have a question or need assistance with your advertising campaign? Reach
+        out using the form below, and our team will get back to you shortly.
+      </p>
+
+      <form action="submit_contact.php" method="POST">
+        <label for="name">Your Name:</label><br />
+        <input
+          class="input"
+          type="text"
+          id="name"
+          name="name"
+          required
+        /><br /><br />
+
+        <label for="email">Your Email:</label><br />
+        <input
+          class="input"
+          type="email"
+          id="email"
+          name="email"
+          required
+        /><br /><br />
+
+        <label for="subject">Subject:</label><br />
+        <input
+          class="input"
+          type="text"
+          id="subject"
+          name="subject"
+          required
+        /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea
+          class="input"
+          id="message"
+          name="message"
+          rows="6"
+          style="width: 100%"
+          required
+        ></textarea
+        ><br /><br />
+
+        <button class="button" type="submit"><span>Send Message</span></button>
+      </form>
+
+      <h2>Other Ways to Reach Us</h2>
+      <ul>
+        <li><strong>Email:</strong> info@infinityads.co.za</li>
+        <li><strong>Phone:</strong> +27 82 123 4567</li>
+        <li>
+          <strong>WhatsApp:</strong>
+          <a href="https://wa.me/27821234567" target="_blank">Message us</a>
+        </li>
+        <li>
+          <strong>Office Address:</strong> Old Johannesburg Road, Lifestyle
+          Centre, South Africa
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutUs.html">About us</a></li>
+              <li><a href="privacy.html">Privacy policy</a></li>
+              <li><a href="termsConditions.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li>
+                <a href="advertisingGuidline.html">Advertising Guidelines</a>
+              </li>
+              <li><a href="contact.html">Contact Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/infinityads" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/infinityads" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/infinityads" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/infinityads"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://wa.me/27821234567?text=Hello%20Infinity%2C%20I%27m%20interested%20in%20advertising!"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="mailto:info@infinityads.co.za" target="_blank">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

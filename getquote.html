@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Billboard Advertising</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="head">
+        <ul>
+          <br />
+          <li>
+            <a href="index.html" class="btn2"><span>Home</span></a>
+          </li>
+          <li>
+            <a href="aboutUs.html" class="btn2"><span>About Us</span></a>
+          </li>
+          <li>
+            <a href="getquote.html" class="btn2"><span>Get Quote</span></a>
+          </li>
+          <li>
+            <a href="gallery.html" class="btn2"><span>Gallery</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="privacy">
+        <h1>Get a Quote</h1>
+        <p>
+          Select the specifications for your advertisement and get an estimated
+          quote.
+        </p>
+
+        <form action="submit_quote.php" method="POST">
+          <h2>Select Billboard Size</h2>
+          <label for="size">Billboard Size:</label><br />
+          <select id="size" name="size" class="input">
+            <option value="small">Small (3m x 6m)</option>
+            <option value="medium">Medium (6m x 12m)</option>
+            <option value="large">Large (12m x 24m)</option>
+          </select>
+
+          <h2>Select Duration</h2>
+          <label for="duration">Duration:</label><br />
+          <select id="duration" name="duration" class="input">
+            <option value="1-week">1 Week</option>
+            <option value="1-month">1 Month</option>
+            <option value="3-months">3 Months</option>
+            <option value="6-months">6 Months</option>
+          </select>
+
+          <h2>Select Billboard Type</h2>
+          <label for="type">Billboard Type:</label><br />
+          <select id="type" name="type" class="input">
+            <option value="digital">Digital Billboard</option>
+            <option value="traditional">Traditional Billboard</option>
+            <option value="led">LED Screen</option>
+          </select>
+
+          <h2>Contact Information</h2>
+          <label for="email">Your Email:</label><br />
+          <input class="input" type="email" id="email" name="email" required />
+
+          <br /><br />
+          <button class="button" type="submit"><span>Get Quote</span></button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutUs.html">About us</a></li>
+              <li><a href="privacy.html">Privacy policy</a></li>
+              <li><a href="termsConditions.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li>
+                <a href="advertisingGuidline.html">Advertising Guidelines</a>
+              </li>
+              <li><a href="contact.html">Contact Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/infinityads" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/infinityads" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/infinityads" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/infinityads"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://wa.me/27821234567?text=Hello%20Infinity%2C%20I%27m%20interested%20in%20advertising!"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="mailto:info@infinityads.co.za" target="_blank">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Billboard Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="head">
+        <ul>
+          <li>
+            <a href="index.html" class="btn2"><span>Home</span></a>
+          </li>
+          <li>
+            <a href="aboutUs.html" class="btn2"><span>About Us</span></a>
+          </li>
+          <li>
+            <a href="getquote.html" class="btn2"><span>Get Quote</span></a>
+          </li>
+          <li>
+            <a href="gallery.html" class="btn2"><span>Gallery</span></a>
+          </li>
+          <li>
+            <a href="testPage.html" class="btn2"><span>Dev</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="privacy">
+      <h1>Our Work</h1>
+      <p>
+        Browse some of our recent mural and billboard advertising campaigns.
+        From premium roadside billboards to stunning hand-painted murals, we
+        help brands shine. Click any image to view in full screen.
+      </p>
+
+      <!-- Grid Image Gallery with Lightbox -->
+      <h2 style="margin-top: 50px">Images</h2>
+      <div class="gallery-grid">
+        <a href="images/image.jpeg" data-lightbox="gallery">
+          <img src="images/image.jpeg" alt="Billboard Ad 1" />
+        </a>
+        <a href="images/image.jpeg" data-lightbox="gallery">
+          <img src="images/image.jpeg" alt="Billboard Ad 2" />
+        </a>
+        <a href="images/test2.jpg" data-lightbox="gallery">
+          <img src="images/test2.jpg" alt="Billboard Ad 1" />
+        </a>
+        <a href="images/test2.jpg" data-lightbox="gallery">
+          <img src="images/test2.jpg" alt="Billboard Ad 1" />
+        </a>
+      </div>
+
+      <!-- Video Gallery -->
+      <h2 style="margin-top: 50px">Video Highlights</h2>
+      <div class="video-gallery">
+        <video controls>
+          <source src="videos/billboard1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video controls>
+          <source src="videos/billboard2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutUs.html">About us</a></li>
+              <li><a href="privacy.html">Privacy policy</a></li>
+              <li><a href="termsConditions.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li>
+                <a href="advertisingGuideline.html">Advertising Guidelines</a>
+              </li>
+              <li><a href="contact.html">Contact Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/infinityads" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/infinityads" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/infinityads" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/infinityads"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://wa.me/27821234567?text=Hello%20Infinity%2C%20I%27m%20interested%20in%20advertising!"
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="mailto:info@infinityads.co.za" target="_blank"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
