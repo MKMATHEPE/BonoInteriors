@@ -309,32 +309,43 @@ div.scroll-container {
 
 /*===================Input====================*/
 .input {
-    margin-top: 1rem;
+    margin-top: 0.6rem;
     border-radius: 6px;
-    outline: 2px solid #e1f5ff;
-    border: 0;
+    border: 1px solid rgba(158, 150, 60, 0.45);
+    outline: none;
     font-family: "Montserrat", sans-serif;
-    background-color: #fbfbf9;
-    outline-offset: 1px;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #f0ebe0;
     padding: 10px 12.5px;
-    transition: all 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
     width: min(100%, 360px);
     min-height: 40px;
     height: auto;
+  }
+
+  .input::placeholder {
+    color: rgba(240, 235, 224, 0.45);
+  }
+
+  select.input option {
+    background-color: #2c2a20;
+    color: #f0ebe0;
   }
 
   textarea.input {
     min-height: 120px;
     resize: vertical;
   }
-  
+
   .input:hover {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-color: rgba(158, 150, 60, 0.7);
   }
-  
+
   .input:focus {
-    outline-offset: -6px;
-    background-color: #d6f1ff;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-color: #9e963c;
+    outline: none;
   }
 /*===================Input====================*/
 
