@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
-    />
-    <link
-      rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
@@ -54,32 +50,54 @@
       <!-- Image Gallery -->
       <h2 style="margin-top: 50px">Project Highlights</h2>
       <div class="gallery-grid">
-        <a href="images/interior1.jpg" data-lightbox="gallery">
+        <button
+          class="gallery-item"
+          data-src="content/5e436605-d2ec-472c-afa3-978545d6beb3.JPG"
+          data-caption="Contemporary Living Room Design"
+        >
           <img
             src="content/5e436605-d2ec-472c-afa3-978545d6beb3.JPG"
             alt="Contemporary Living Room Design"
           />
-        </a>
-        <a href="images/interior2.jpg" data-lightbox="gallery">
+        </button>
+        <button
+          class="gallery-item"
+          data-src="content/image.png"
+          data-caption="Modern Kitchen Space"
+        >
           <img src="content/image.png" alt="Modern Kitchen Space" />
-        </a>
-        <a href="images/interior3.jpg" data-lightbox="gallery">
+        </button>
+        <button
+          class="gallery-item"
+          data-src="images/bedroomr.png"
+          data-caption="Elegant Office Layout"
+        >
           <img src="images/bedroomr.png" alt="Elegant Office Layout" />
-        </a>
-        <a href="images/interior4.jpg" data-lightbox="gallery">
+        </button>
+        <button
+          class="gallery-item"
+          data-src="images/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg"
+          data-caption="Luxury Bedroom Design"
+        >
           <img
             src="images/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg"
-            alt="Luxury Bedroom Design"
+            alt="Luxury Lighting"
           />
-        </a>
-
-        <a href="images/interior5.jpg" data-lightbox="gallery">
+        </button>
+        <button
+          class="gallery-item"
+          data-src="images/officespace.png"
+          data-caption="Office Space Design"
+        >
           <img src="images/officespace.png" alt="Office Space Design" />
-        </a>
-
-        <a href="images/interior6.jpg" data-lightbox="gallery">
+        </button>
+        <button
+          class="gallery-item"
+          data-src="images/livingspace.png"
+          data-caption="Living Space Design"
+        >
           <img src="images/livingspace.png" alt="Living Space Design" />
-        </a>
+        </button>
       </div>
 
       <!-- Video Gallery -->
@@ -99,6 +117,18 @@
         </video>
       </div>
     </section>
+
+    <!-- Lightbox Modal -->
+    <div
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+    >
+      <button id="lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-caption"></p>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -158,8 +188,6 @@
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
