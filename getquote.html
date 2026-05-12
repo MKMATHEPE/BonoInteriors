@@ -46,7 +46,12 @@
           quote from our team.
         </p>
 
-        <form action="submit_quote.php" method="POST">
+        <form action="https://formsubmit.co/bonointeriors@outlook.com" method="POST">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New Quote Request – BONO Interior Design" />
+          <input type="hidden" name="_next" value="https://bonointeriors.co.za/getquote.html" />
+          <input type="hidden" name="_captcha" value="false" />
+
           <h2>Project Type</h2>
           <label for="project">Type of Space:</label><br />
           <select id="project" name="project" class="input">
