@@ -91,9 +91,9 @@ body {
 /*===================header-logo====================*/
 
 .logo-head img {
-  height: 72px;  /* control logo size */
+  height: 48px;
   width: auto;
-  padding: 0 22px 18px 0;
+  padding: 0 16px 0 0;
 }
 
 
@@ -159,7 +159,7 @@ body {
 
 nav {
     background-color: #0a0a23;
-    padding: 15px clamp(14px, 4vw, 32px);
+    padding: 8px clamp(14px, 4vw, 32px);
 }
 nav ul {
     list-style: none;
@@ -211,7 +211,7 @@ nav ul li a:hover::after {
     z-index: 1000;
     backdrop-filter: blur(15px);
     background-color: rgba(86, 86, 25, 0); /* Optional: adds tint over blur */
-    min-height: 75px;
+    min-height: 60px;
     height: auto;
     display: flex;
     align-items: center;
@@ -227,8 +227,12 @@ nav ul li a:hover::after {
   }
 
 
+body.gallery section.privacy:first-of-type {
+  margin-top: 82px;
+}
+
 .hero {
-  margin-top: 120px; /* Moves hero section below the fixed header */
+  margin-top: 82px;
     background: url('billboard-image.jpg') no-repeat center center/cover;
     min-height: 120px;
     height: auto;
@@ -661,12 +665,16 @@ ul{
   }
 
   .logo-head img {
-    height: 58px;
+    height: 42px;
     padding: 0;
   }
 
   .hero {
-    margin-top: 150px;
+    margin-top: 120px;
+  }
+
+  body.gallery section.privacy:first-of-type {
+    margin-top: 120px;
   }
 
   .logo-background {
