@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Home page */
@@ -33,7 +33,7 @@ body.book {
 
 /* Gallery page */
 body.gallery {
-  background: url('/images/bilal-mansuri-UWXrQ-l_1Co-unsplash.jpg')
+  background: url('/images/bilal-mansuri-yJ78NE83YH8-unsplash.jpg')
     no-repeat center center / cover;
 }
 
@@ -204,11 +204,14 @@ nav ul li a:hover::after {
 }
 
 
-.head {
-    position: fixed; /* Makes it stay at the top */
+header {
+    position: sticky;
     top: 0;
-    width: 100%;
     z-index: 1000;
+}
+
+.head {
+    width: 100%;
     backdrop-filter: blur(15px);
     background-color: rgba(86, 86, 25, 0); /* Optional: adds tint over blur */
     min-height: 60px;
@@ -758,4 +761,30 @@ ul{
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+/* =================== Page Transitions =================== */
+
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes pageFadeOut {
+  from { opacity: 1; transform: translateY(0);     }
+  to   { opacity: 0; transform: translateY(-10px); }
+}
+
+body {
+  animation: pageFadeIn 0.45s ease forwards;
+}
+
+body.page-exit {
+  animation: pageFadeOut 0.3s ease forwards;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body       { animation: none; }
+  body.page-exit { animation: none; }
 }
