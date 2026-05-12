@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Gallery lightbox
     const lightbox    = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxCap = document.getElementById('lightbox-caption');
     const lightboxClose = document.getElementById('lightbox-close');
 
     if (lightbox) {
@@ -37,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
             btn.addEventListener('click', () => {
                 lightboxImg.src = btn.dataset.src;
                 lightboxImg.alt = btn.dataset.caption || '';
-                lightboxCap.textContent = btn.dataset.caption || '';
                 lightbox.classList.add('open');
                 document.body.style.overflow = 'hidden';
             });

@@ -626,12 +626,6 @@ ul{
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
 }
 
-#lightbox-caption {
-  color: #e0d8c8;
-  font-size: 15px;
-  letter-spacing: 0.04em;
-  margin: 0;
-}
 
 #lightbox-close {
   position: absolute;
